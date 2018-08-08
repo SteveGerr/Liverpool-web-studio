@@ -1,0 +1,51 @@
+$bodybgcolor: rgb(214, 214, 214);
+$menubgcolor: rgba(207, 0, 0, 0.67);
+$menu_libgcolor: rgb(211, 212, 211);
+$li_bordercolor: rgb(254, 254, 254);
+
+body
+  background-color: $bodybgcolor;
+  margin: 0px;
+
+.flex-container
+  display: flex;
+
+.header
+  background-image: url("");
+
+.menu
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: $menubgcolor;
+
+  .menu_btnblock
+    height: inherit;
+    .menu_items
+      height: inherit;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+
+      li
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        width: 100px;
+        list-style-type: none;
+        border-right: 1px solid $li_bordercolor;
+        border-left: 1px solid $li_bordercolor;
+
+      li:hover
+        cursor: pointer;
+        transform: translateY(5px);
+        transition-delay: .1.5s;
+        transition-duration: .2s;
+        transition: background-color 1s ease;
+        background-color: rgba(255, 255, 255, 0.72);
