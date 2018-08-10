@@ -7,15 +7,24 @@ body
   background-color: $bodybgcolor;
   margin: 0px;
 
+
 .flex-container
   display: flex;
+
+.wraper
+  flex-direction: column; //vertical from the top down
+  margin-top: 40px;
+
+.header
 
 .menu
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
+  margin-top: -40px;
   height: 40px;
   width: 100%;
   background-color: $menubgcolor;
@@ -46,3 +55,35 @@ body
         transition-duration: .2s;
         transition: background-color 1s ease;
         background-color: rgba(255, 255, 255, 0.72);
+.top-bimg__layer
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.50);
+.bgc
+  color: rgb(255, 251, 254);
+
+.top-bgimg
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  height: 399px;
+  background-color: rgb(98, 71, 227);
+  background-image: url("../img/Liverpool_ship.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+.top-bgimg__h1
+  color: rgba(255, 0, 0, 0.90);
+  font-size: 100px;
+.top-bgimg__h2
+  align-self: flex-end;
+  padding-right: 30%;
+.content
+  height: 100vh;
+.footer
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+  height: 100px;
+  background-color: rgb(205, 181, 51);
