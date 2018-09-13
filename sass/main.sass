@@ -3,17 +3,28 @@ $menubgcolor: rgba(207, 0, 0, 0.67);
 $menu_libgcolor: rgb(211, 212, 211);
 $li_bordercolor: rgb(254, 254, 254);
 
+html
+  overflow-x: hidden;
+  box-sizing: border-box;
+  min-width: 320px;
+
 body
   background-color: $bodybgcolor;
   margin: 0px;
+  min-width: 320px;
+
 
 
 .flex-container
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  flex-wrap: wrap;
 
-.wraper
-  flex-direction: column; //vertical from the top down
+.wrapper
+  flex-direction: column;
   margin-top: 40px;
+
 
 .header
 
@@ -28,7 +39,6 @@ body
   height: 40px;
   width: 100%;
   background-color: $menubgcolor;
-
   .menu_btnblock
     height: inherit;
     .menu_items
@@ -55,6 +65,21 @@ body
         transition-duration: .2s;
         transition: background-color 1s ease;
         background-color: rgba(255, 255, 255, 0.72);
+.btn-menu
+  height: 30px;
+  width: 30px;
+  background-image: url("/img/LWS_Logo.png");
+  background-position: center;
+  background-size: contain;
+  border-radius: 70%;
+  cursor: pointer;
+.btn-menu:hover
+  box-shadow: 0 0 10px rgb(84, 84, 84);
+  height: 31px;
+  width: 31px;
+
+
+
 .top-bimg__layer
   height: inherit;
   background-color: rgba(0, 0, 0, 0.50);
@@ -67,6 +92,7 @@ body
   display: flex;
   flex-direction: column;
   height: 399px;
+  max-width: 100%;
   background-color: rgb(98, 71, 227);
   background-image: url("../img/Liverpool_ship.jpg");
   background-size: cover;
@@ -80,11 +106,11 @@ body
   align-self: flex-end;
   padding-right: 30%;
 .content
-  display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
-  height: 100vh;
+  // height: 100vh;
+  width: 100%;
   background-image: url("../img/WhiteBGContent.jpg");
   background-position: center;
   background-size: cover;
@@ -93,13 +119,20 @@ body
     border: 2px solid rgb(173, 170, 175);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     background-color: rgb(147, 147, 147);
+    background-image: url("../img/mykonos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 500px;
     height: 300px;
 
+@media screen and (max-width: 506px)
+  .portfolio
+    width: 100%!important;
+  .top-bgimg__h1
+    font-size: 50px;
+
 .footer
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: flex-end;
+
   height: 100px;
   background-color: rgb(205, 181, 51);
