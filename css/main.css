@@ -1,194 +1,43 @@
 html {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-width: 320px; }
+          box-sizing: border-box; }
 
 body {
   background-color: #d6d6d6;
-  margin: 0px;
-  min-width: 320px; }
-
-.flex-container {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  margin: 0px; }
 
 .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 40px; }
+  padding: 0; }
 
-.menu {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.left-block {
+  height: 100vh;
   position: fixed;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -40px;
-  height: 40px;
+  background-color: #373737;
+  border: 1px solid #2667f6; }
+
+.right-block {
+  height: 100vh;
   width: 100%;
-  background-color: rgba(207, 0, 0, 0.67); }
-  .menu .menu_btnblock {
-    height: inherit; }
-    .menu .menu_btnblock .menu_items {
-      height: inherit;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin: 0px; }
-      .menu .menu_btnblock .menu_items li {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        height: inherit;
-        width: 100px;
-        list-style-type: none;
-        border-right: 1px solid #fefefe;
-        border-left: 1px solid #fefefe; }
-      .menu .menu_btnblock .menu_items li:hover {
-        cursor: pointer;
-        -webkit-transform: translateY(5px);
-            -ms-transform: translateY(5px);
-                transform: translateY(5px);
-        -webkit-transition-delay: 0.1 0.5s;
-             -o-transition-delay: 0.1 0.5s;
-                transition-delay: 0.1 0.5s;
-        -webkit-transition-duration: .2s;
-             -o-transition-duration: .2s;
-                transition-duration: .2s;
-        -webkit-transition: background-color 1s ease;
-        -o-transition: background-color 1s ease;
-        transition: background-color 1s ease;
-        background-color: rgba(255, 255, 255, 0.72); }
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 25%;
+  background-color: rgba(51, 117, 179, 0.5); }
 
-.btn-menu {
-  height: 30px;
-  width: 30px;
-  background-image: url("/img/LWS_Logo.png");
-  background-position: center;
-  -webkit-background-size: contain;
-          background-size: contain;
-  -webkit-border-radius: 70%;
-          border-radius: 70%;
-  cursor: pointer; }
-
-.btn-menu:hover {
-  -webkit-box-shadow: 0 0 10px #545454;
-          box-shadow: 0 0 10px #545454;
-  height: 31px;
-  width: 31px; }
-
-.top-bimg__layer {
-  height: inherit;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.bgc {
-  color: #fffbfe; }
-
-.top-bgimg {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 399px;
-  max-width: 100%;
-  background-color: #6247e3;
-  background-image: url("../img/Liverpool_ship.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-repeat: no-repeat; }
-
-.top-bgimg__h1 {
-  color: rgba(255, 0, 0, 0.9);
-  font-size: 100px; }
-
-.top-bgimg__h2 {
-  color: white;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-  padding-right: 30%; }
+.header {
+  background-color: #e4e4e4; }
 
 .content {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  background-image: url("../img/WhiteBGContent.jpg");
-  background-position: center;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-repeat: no-repeat; }
-  .content .portfolio {
-    border: 2px solid #adaaaf;
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    background-color: #939393;
-    background-image: url("../img/mykonos.jpg");
-    background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 300px; }
+  background-color: #8f50c9; }
 
-@media screen and (max-width: 506px) {
-  .portfolio {
-    width: 100% !important; }
-  .top-bgimg__h1 {
-    font-size: 50px; } }
+.portfolio {
+  background-color: #76beb6; }
 
 .footer {
-  height: 100px;
-  background-color: #cdb533; }
+  background-color: #423831; }
+
+@media screen and (max-width: 767px) {
+  .right-block {
+    margin-left: 41.66%; } }
