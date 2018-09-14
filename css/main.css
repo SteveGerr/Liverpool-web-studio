@@ -10,21 +10,35 @@ body {
 .wrapper {
   padding: 0; }
 
+@media screen and (min-width: 576px) {
+  .menu {
+    display: none; } }
+
 .left-block {
+  position: relative;
   height: 100vh;
   position: fixed;
-  background-color: #373737;
-  border: 1px solid #2667f6; }
+  background-color: #373737; }
+
+.right-block-wrapper {
+  position: fixed;
+  padding: 0;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  overflow-x: scroll; }
 
 .right-block {
   height: 100vh;
   width: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-left: 25%;
+  padding: 0;
   background-color: rgba(51, 117, 179, 0.5); }
+
+@media screen and (max-width: 575px) {
+  .left-block {
+    display: none; }
+  .right-block {
+    margin: 0; } }
 
 .header {
   background-color: #e4e4e4; }
@@ -37,13 +51,3 @@ body {
 
 .footer {
   background-color: #423831; }
-
-@media screen and (max-width: 767px) {
-  .right-block {
-    margin-left: 41.66%; } }
-
-@media screen and (max-width: 576px) {
-  .left-block {
-    display: none; }
-  .right-block {
-    margin: 0; } }

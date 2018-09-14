@@ -17,19 +17,36 @@ body
 .wrapper
   padding: 0;
 
+@media screen and (min-width: 576px)
+  .menu
+    display: none;
+
 .left-block
+  position: relative;
   height: 100vh;
   position: fixed;
-
   background-color: rgb(55, 55, 55);
-  border: 1px solid rgb(38, 103, 246);
+  // border: 1px solid rgb(38, 103, 246);
 
+.right-block-wrapper
+  position: fixed;
+  padding: 0;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  overflow-x: scroll;
 .right-block
   height: 100vh;
   width: 100%;
-  justify-content: flex-end;
-  margin-left: 25%;
+  padding: 0;
   background-color: rgba(51, 117, 179, 0.5);
+
+@media screen and (max-width: 575px)
+  .left-block
+    display: none; //To hide block
+  .right-block
+    margin: 0; // Del margin for width block 100%
+
 
 .header
   background-color: rgb(228, 228, 228);
@@ -42,12 +59,3 @@ body
 
 .footer
   background-color: rgb(66, 56, 49);
-
-@media screen and (max-width: 767px)
-  .right-block
-    margin-left: 41.66%;
-@media screen and (max-width: 576px)
-  .left-block
-    display: none;
-  .right-block
-    margin: 0;
