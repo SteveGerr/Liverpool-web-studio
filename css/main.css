@@ -41,3 +41,9 @@ body {
 @media screen and (max-width: 767px) {
   .right-block {
     margin-left: 41.66%; } }
+
+@media screen and (max-width: 576px) {
+  .left-block {
+    display: none; }
+  .right-block {
+    margin: 0; } }
