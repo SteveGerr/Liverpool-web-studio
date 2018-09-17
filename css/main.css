@@ -10,15 +10,25 @@ body {
 .wrapper {
   padding: 0; }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: none; } }
 
 .left-block {
   position: relative;
   height: 100vh;
+  padding: 0;
   position: fixed;
   background-color: #373737; }
+
+.left-block__header {
+  height: 25%;
+  width: 100%;
+  margin: 0;
+  background-color: #f6e71b;
+  background-image: url("/img/LWS_Logo.png");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .right-block-wrapper {
   position: fixed;
@@ -33,12 +43,6 @@ body {
   width: 100%;
   padding: 0;
   background-color: rgba(51, 117, 179, 0.5); }
-
-@media screen and (max-width: 575px) {
-  .left-block {
-    display: none; }
-  .right-block {
-    margin: 0; } }
 
 .header {
   background-color: #e4e4e4; }
