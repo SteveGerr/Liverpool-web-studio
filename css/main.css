@@ -26,9 +26,47 @@ body {
   width: 100%;
   margin: 0;
   background-color: #f6e71b;
-  background-image: url("/img/LWS_Logo.png");
+  background-image: url("../img/LWS_Logo.png");
   background-repeat: no-repeat;
   background-position: center; }
+
+.left-block__item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15%;
+  background-color: #6f6e6e;
+  border-bottom: 1px solid #f6e71b;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .left-block__item:hover {
+    border-left: 2px solid #f6e71b;
+    cursor: pointer; }
+  .left-block__item a {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none; }
 
 .right-block-wrapper {
   position: fixed;

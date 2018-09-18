@@ -2,17 +2,14 @@ $bodybgcolor: rgb(214, 214, 214);
 $menubgcolor: rgba(207, 0, 0, 0.67);
 $menu_libgcolor: rgb(211, 212, 211);
 $li_bordercolor: rgb(254, 254, 254);
-$LBHC: rgb(246, 231, 27); // left-block__header bgcolor
+$LBHC: rgb(246, 231, 27); // left-block__header b$LBHC
 html
   overflow-x: hidden;
   box-sizing: border-box;
-
-
-
-
 body
   background-color: $bodybgcolor;
   margin: 0px;
+
 
 .wrapper
   padding: 0;
@@ -20,6 +17,7 @@ body
 @media screen and (min-width: 768px)
   .menu
     display: none;
+
 
 .left-block
   position: relative;
@@ -32,9 +30,31 @@ body
   width: 100%;
   margin: 0;
   background-color: $LBHC;
-  background-image: url("/img/LWS_Logo.png")
+  background-image: url("../img/LWS_Logo.png")
   background-repeat: no-repeat;
   background-position: center;
+.left-block__item
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 15%;
+  background-color: #6f6e6e;
+  border-bottom: 1px solid $LBHC;
+  justify-content: center;
+  align-items: center;
+  &:hover
+    border-left: 2px solid $LBHC;
+    cursor: pointer;
+  a
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
 
 
 .right-block-wrapper
@@ -49,8 +69,6 @@ body
   width: 100%;
   padding: 0;
   background-color: rgba(51, 117, 179, 0.5);
-
-
 
 .header
   background-color: rgb(228, 228, 228);
