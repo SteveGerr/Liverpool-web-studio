@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Russo+One&subset=cyrillic");
 html {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
@@ -19,7 +20,9 @@ body {
   height: 100vh;
   padding: 0;
   position: fixed;
-  background-color: #373737; }
+  background-color: #373737;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px; }
 
 .left-block__header {
   height: 25%;
@@ -50,6 +53,24 @@ body {
   .left-block__item:hover {
     border-left: 2px solid #f6e71b;
     cursor: pointer; }
+    .left-block__item:hover .item-home {
+      background-image: url("../img/icons/home-hover.png");
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat; }
+    .left-block__item:hover .item-about {
+      background-image: url("../img/icons/about-hover.png");
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat; }
+    .left-block__item:hover .item-contacts {
+      background-image: url("../img/icons/contacts-hover.png");
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat; }
   .left-block__item a {
     display: -webkit-flex;
     display: -ms-flex;
@@ -66,7 +87,37 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    text-decoration: none; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: none;
+    color: #bad5ff; }
+    .left-block__item a:last-of-type:hover {
+      border-bottom: 1px solid #f6e71b;
+      color: #f6e71b; }
+
+.item-home {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icons/home.png");
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+.item-about {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icons/about.png");
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+.item-contacts {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icons/contacts.png");
+  -webkit-background-size: contain;
+          background-size: contain; }
 
 .right-block-wrapper {
   position: fixed;

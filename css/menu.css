@@ -45,7 +45,7 @@
   right: 0;
   top: 0;
   position: absolute;
-  background-color: rgba(135, 12, 31, 0.54);
+  background-color: rgba(111, 110, 110, 0.55);
   -webkit-border-radius: 50%;
           border-radius: 50%;
   z-index: 18;
@@ -72,7 +72,7 @@
     .sub-menu li:nth-child(5) {
       -webkit-transition-delay: 0.25s; }
     .sub-menu li a {
-      color: #fff;
+      color: #bad5ff;
       font-family: 'Lato', Arial, Helvetica, sans-serif;
       font-size: 16px;
       width: 100%;
@@ -106,7 +106,7 @@
   top: -160px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-color: rgba(191, 36, 55, 0.54); }
+  background-color: rgba(130, 105, 105, 0.55); }
 
 .oppenned span:nth-child(3) {
   -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);

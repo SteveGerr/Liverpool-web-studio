@@ -1,8 +1,17 @@
+// font
+@import url('https://fonts.googleapis.com/css?family=Oswald|Russo+One&subset=cyrillic');
+//font-family: 'Oswald', sans-serif;
+//font
 $bodybgcolor: rgb(214, 214, 214);
 $menubgcolor: rgba(207, 0, 0, 0.67);
 $menu_libgcolor: rgb(211, 212, 211);
 $li_bordercolor: rgb(254, 254, 254);
+$lbbgc: rgb(55, 55, 55);
 $LBHC: rgb(246, 231, 27); // left-block__header b$LBHC
+$lbmi: rgb(111, 110, 110); // left-block menu items color
+$lbfc: rgb(186, 213, 255); // left-block font color
+$lbff: 'Oswald', sans-serif; //left-block font-family
+$lbfsz: 18px;
 html
   overflow-x: hidden;
   box-sizing: border-box;
@@ -24,7 +33,9 @@ body
   height: 100vh;
   padding: 0;
   position: fixed;
-  background-color: rgb(55, 55, 55);
+  background-color: $lbbgc;
+  font-family: $lbff;
+  font-size: $lbfsz;
 .left-block__header
   height: 25%;
   width: 100%;
@@ -38,13 +49,28 @@ body
   display: -ms-flex;
   display: flex;
   height: 15%;
-  background-color: #6f6e6e;
+  background-color: $lbmi;
   border-bottom: 1px solid $LBHC;
   justify-content: center;
   align-items: center;
   &:hover
     border-left: 2px solid $LBHC;
     cursor: pointer;
+    .item-home
+        background-image: url("../img/icons/home-hover.png");
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+    .item-about
+      background-image: url("../img/icons/about-hover.png");
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+    .item-contacts
+      background-image: url("../img/icons/contacts-hover.png");
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
   a
     display: -webkit-flex;
     display: -ms-flex;
@@ -53,8 +79,28 @@ body
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-decoration: none;
+    color: $lbfc;
+    &:last-of-type:hover
+      border-bottom: 1px solid $LBHC;
+      color: $LBHC;
 
+.item-home
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icons/home.png");
+  background-size: contain;
+.item-about
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icons/about.png");
+  background-size: contain;
+.item-contacts
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icons/contacts.png");
+  background-size: contain;
 
 
 .right-block-wrapper
