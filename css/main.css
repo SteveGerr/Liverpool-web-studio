@@ -125,7 +125,7 @@ body {
   height: 100vh;
   right: 0;
   top: 0;
-  overflow-x: scroll; }
+  overflow-y: scroll; }
 
 .right-block {
   height: 100vh;
@@ -134,7 +134,59 @@ body {
   background-color: rgba(51, 117, 179, 0.5); }
 
 .header {
+  background-image: url("../img/bg/home_img.jpeg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   background-color: #e4e4e4; }
+
+.header__wrapperbg {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(3, 3, 3, 0.5);
+  width: 100%;
+  height: 100%; }
+  .header__wrapperbg .row {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__wrapperbg .header-text h1,
+  .header__wrapperbg .header-text h6 {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    color: #7caef9; }
+  .header__wrapperbg .button-contact {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #79c920;
+    top: 80%; }
 
 .content {
   background-color: #8f50c9; }
